@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>炫酷闪动文字</title>
+    <style>
+        body {
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .text {
+            font-size: 50px;
+            color: #fff;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text">建童，我是你爸爸！！！！</h1>
+    </div>
+</body>
+</html>
